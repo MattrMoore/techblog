@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Create a New Post:</h3>
+
+    <form class="form new-blog-form">
+      <div class="form-group">
+        <label for="title">Title of Post:</label>
+        <input class="form-input" type="text" id="title" name="title" />
+      </div>
+      <div class="form-group">
+        <label for="description">Body/Description of post:</label>
+        <textarea class="form-input" id="description" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Post</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-6 blog-list">
+    <h3>Current blogs:</h3>
+
+    {{#each blogs as |blog|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<script src="./js/dashboard.js"></script>
