@@ -1,0 +1,41 @@
+header, .blog:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .bg-custom {
+    background-color: rgb(209, 155, 238);
+    color: azure;
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: rgb(6, 226, 226) 1px 0 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .bg {
+    height: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #1dadf0;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: #065b83;
+    text-decoration: underline;
+  }
+  
+  .dollar-amount {
+    color: #056605;
+    font-weight: bold;
+    margin-left: -5px;
+  }
