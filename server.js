@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
+  secret: process.env.SECRET,
   cookie: {
     maxAge: 300000,
     httpOnly: true,
@@ -38,7 +39,6 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 app.use(routes);
 
