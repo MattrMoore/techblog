@@ -8,6 +8,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Links 
 https://mrmtech.herokuapp.com/
+https://github.com/MattrMoore/techblog
 
 ## Screenshots
 ![image](https://github.com/MattrMoore/techblog/assets/114311012/6afabf19-3295-4843-ae86-8146713085f3)
